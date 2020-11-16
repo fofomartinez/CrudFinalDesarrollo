@@ -1,0 +1,49 @@
+{% load static %}
+<aside class="main-sidebar sidebar-light-primary elevation-4">
+
+    <div class="sidebar" >
+
+        <nav class="mt-2" >
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-header">      Mantenimientos</li>
+                <li class="nav-item">
+                    <a href="{% url 'erp:category_list' %}" class="nav-link">
+                        <i class="nav-icon fas fa-file-contract"></i>
+                        <p>
+                            Familias
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{% url 'erp:marca_list' %}" class="nav-link">
+                        <i class="nav-icon fas fa-marker"></i>
+                        <p>
+                            Marcas
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{% url 'erp:product_list' %}" class="nav-link">
+                        <i class="nav-icon fas fa-laptop"></i>
+                        <p>
+                            Equipos
+                        </p>
+                    </a>
+                </li>
+
+
+
+                <li class="nav-item">
+                    <a href="{% url 'user:user_list' %}" class="nav-link">
+                        <i class="nav-icon fas fa-user-clock"></i>
+                        <p>
+                            Administrar usuario
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
